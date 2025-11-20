@@ -1,17 +1,22 @@
-name: Deploy Docs
+name: Deploy MkDocs to GitHub Pages
 
 on:
   push:
     branches:
-      - master  # 监听 master 分支的推送事件
+      - main # 只有 main 分支有新内容时才触发部署
 
 jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
-      # 1. 检出代码
       - uses: actions/checkout@v4
-      # 2. 部署 MkDocs
       - uses: actions/setup-python@v5
-      - run: pip install mkdocs-material
-      - run: mkdocs gh-deploy --force # 使用 mkdocs-material 内置的部署命令
+        with:
+          python-version: 3.x # 使用最新的 Python 版本
+
+      - name: Install dependencies
+        run: |
+          pip install mkdocs mkdocs-material mkdocs-obsidian # 安装所有需要的库
+      
+      - name: Deploy MkDocs
+        run: mkdocs gh-deploy --force # 使用 gh-deploy 命令部署到 gh-pages 分支
