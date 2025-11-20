@@ -1,3 +1,4 @@
+```
 Solution Root (一个解决方案，10~25 个项目)
 │
 ├── Backend/                              ← 纯后端，所有项目都是 .NET 9
@@ -37,6 +38,7 @@ Solution Root (一个解决方案，10~25 个项目)
 │   └── HotfixDlls/
 │
 └── Directory.Build.props                 ← 全局版本、打包设置
+```
 
 ### 2025 年真实大厂都在用的技术组合（99% 命中）
 

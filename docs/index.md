@@ -9,7 +9,37 @@ Avalonia, MVVM, LibVLCSharp快速搭建视频播放器
 - LibVLCSharp: 核心 LibVLCSharp 库。
 - VideoLAN.LibVLC.*.Platform: 根据你的目标平台，安装对应的原生 LibVLC 运行时包（例如 VideoLAN.LibVLC.Windows、VideoLAN.LibVLC.Mac、VideoLAN.LibVLC.Linux）。
 
-* 格式怎么不一样？
+>>>
+
+aaaaaaaaaaaaaaaaaaaaaaaa
+* 测试1：上面必须空出一行？
+
+aaaaaaaaaaaaaaaaaaaaaaaa
+- 测试2：上面必须空出一行？
+
+* 测试3：下面必须空出一行？
+aaaaaaaaaaaaaaaaaaaaaaaa
+
+- 测试4：下面必须空出一行？
+aaaaaaaaaaaaaaaaaaaaaaaa
+
+aaaaaaaaaaaaaaaaaaaaaaaa
+
+* 测试5：上面必须空出一行？
+
+aaaaaaaaaaaaaaaaaaaaaaaa
+
+- 测试6：上面必须空出一行？
+
+* 测试7：下面必须空出一行？
+
+aaaaaaaaaaaaaaaaaaaaaaaa
+
+- 测试8：下面必须空出一行？
+
+aaaaaaaaaaaaaaaaaaaaaaaa
+
+>>>
 
 ## Commands
 
