@@ -22,3 +22,20 @@ plugins:
         # 你可能需要配置参数，例如：
         # wikilinks: true  # 确保启用维基链接样式
         # markdown_location: "docs"
+markdown_extensions:
+    # 支持脚注、表格等
+    - admonition
+    - abbr
+    - attr_list
+    - def_list
+    - footnotes
+    - tables
+    
+    # pymdownx 是 MkDocs Material 推荐的高级扩展
+    - pymdownx.details
+    - pymdownx.superfences
+    - pymdownx.critic
+    - pymdownx.betterem
+    - pymdownx.mark
+    - pymdownx.inlinehilite
+    - pymdownx.keys
