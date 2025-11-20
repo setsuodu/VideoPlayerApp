@@ -18,3 +18,7 @@ plugins:
     # 如果要处理 Obsidian 链接和特性，需要在这里添加相应插件
     # - mkdocs-for-obsidian
     # - awesome-pages
+    - roamlinks
+        # 你可能需要配置参数，例如：
+        # wikilinks: true  # 确保启用维基链接样式
+        # markdown_location: "docs"
