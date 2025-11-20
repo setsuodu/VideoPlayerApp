@@ -1,0 +1,17 @@
+name: Deploy Docs
+
+on:
+  push:
+    branches:
+      - master  # 监听 master 分支的推送事件
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      # 1. 检出代码
+      - uses: actions/checkout@v4
+      # 2. 部署 MkDocs
+      - uses: actions/setup-python@v5
+      - run: pip install mkdocs-material
+      - run: mkdocs gh-deploy --force # 使用 mkdocs-material 内置的部署命令
